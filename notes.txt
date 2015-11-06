@@ -1,0 +1,94 @@
+Potential out-of-the-box-solutions for pointy VR 3D stuff
+
+### Intel RealSense
+"Intel RealSense, formerly known as Intel Perceptual Computing,[1] is a platform for implementing gesture-based Human-Computer Interaction techniques.
+Ut consists of series of consumer grade 3D cameras together with an easy to use machine perception library that simplifies supporting the cameras for third-party software developers.[2][3][4]"
+
+- Intel's up-and-coming solution to depth-perceiving VR-enabled camera
+- Integrated into lot of new laptops (MS Surface, Lenovo and Acer laptops etc.)
+
+Pros & Cons
+	+ Development kit only costs a 100$
+	+ Seems to be well-documented
+	+ Comes with ready-made depth-sensing technology
+	+ Advertised as not being so dependant on IR, and working outdoors (new R200 model, not the old F200 model)
+
+	- Currently only supports Windows 8.1 x64, with Android and other tablet support 'Coming Soon' (Who wants to carry around a laptop on top of their head!?)
+
+
+### Kinect
+
+- Microsoft's 3d sensing camera originally meant for the Xbox consoles, now adopted by many developers
+
+	+ People have been hacking and modifying these for years, so documentation and examples exist
+	+ Cheap (Aalto already owns a couple to my knowledge, it costs something like 50€)
+	+ Also comes with depth-perception built in (range: minimum 800mm maximum 4000mm) or with Near Mode minimum 500mm maximum 3000mm
+	+ Supports both Linux and Windows
+
+	- Not really built for our use-case (only meant to recognize people and movement from the front, but the same can be said of all the ready-made solutions)
+	- Dependant on IR --> Doesn't necessarily work outdoors in sunlight. I read the newer Kinect 2 might contain some improvements on this area?
+	- Pretty bulky
+
+### Do it ourselves.
+There's always the option of ignoring all the already-existing stuff, and building our own prototype from scratch. Something like a Raspberry Pi with a webcam and OpenCV imaging library, and Bluetooth/WiFi modules and such would work.
+
+Pros & Cons
+	+ Full control of the end result and it's functionality
+	+ Excellent learning opportunity!
+
+	- We have build the prototype ourselves
+	- And we have to code the functionality
+	- and it'll probably be really difficult
+	- Realistically speaking, will probably cost us more than mass-produced out-of-the-box solutions
+
+ZED Stereo cam (https://www.stereolabs.com/)
+
+- Really hi-tech solution meant for drones, self-driving cars etc.
+- "The ZED Stereo Camera is the first high definition stereo sensor for depth perception. The ZED enables developers to build advanced systems that recognize their environments and take intelligent actions."
+
+Pros & Cons
+
+	+ Small
+	+ Seems really powerful (3840x1080 px at 30fps, field of view 110 degrees, range up to 20 meters
+	+ Guaranteed to work outdoors
+	+ Good developer documentation and examples
+	+ Support for both Linux and Windows.
+
+	- Pretty expensive (499 dollars)
+	- Range is 1.5 - 20 m (People don't have hands that long!) :(
+
+SoftKinetic DepthSense Cameras
+- Our time-of-flight CMOS 3D cameras and modules provide advanced 3D vision for consumer and industrial applications.
+
+Pros & Cons
+	+ Range is 0.10m - 5.0m which is A-OK for our usage.
+	- Only available for 'strategic customers'.
+	- For indoor use only
+
+Structure depth sensor (http://structure.io/)
+
+Pros & Cons
+	+ Specifically meant to be used together with phones and tablets (especially iPad)
+	+ Seems to work good for 3d imaging hands -> http://structure.io/static/occipital/images/v1/home/home-hacker-screenshot.jpg
+
+	- Sort of expensive (499 dollars for the entire bundle)
+	- "Works best indoors or outside of direct sunlight" :(
+
+Pelican imagining
+- Another mobile-first 3d imaging library
+
+Pros & Cons
+
+	+ Doesn't utilize IR sensors -> may work broad daylight? No specific mentions on this.
+	+ Small
+
+	- Only available on request.
+
+All in all
+- Most structured light camera sensors like the structure.io, Intel RealSense or Microsoft Kinect don't work outdoors, or at least not in direct sunlight
+- However, they still might work good enough since we only need them to function in such a short range.
+- 3D depth cameras are a popular technology now, can be applied with robotics, self driving cars etc
+- Tried out Kinect 1, didn't really work out. Depth buffer wasn't accurate at close ranges, as it's meant to be put on top of your TV in your living room.
+
+- Kinect 2 has built in hand recognition
+- Kinect 2 for windows not manufactured anymore, but has closer operating range than regular kinect 2
