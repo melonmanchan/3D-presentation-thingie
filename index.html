@@ -11,7 +11,7 @@
         @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
 		.footnote img {
-			transform: translateX(-50%) translateY(50%) scale(0.5);
+			transform: translateX(-30%) translateY(30%) scale(0.5);
 		}
         body {
             font-family: 'Droid Serif';
@@ -24,10 +24,6 @@
         .remark-slide-content h1 { font-size: 3em; }
         .remark-slide-content h2 { font-size: 2em; }
         .remark-slide-content h3 { font-size: 1.6em; }
-        .footnote {
-            position: absolute;
-            bottom: 3em;
-        }
         li p { line-height: 1.25em; }
         .red { color: #fa0000; }
         .green {color: greenyellow}
@@ -71,7 +67,8 @@
         }
 
         /* Slide-specific styling */
-        #slide-inverse .footnote {
+         .footnote {
+		 position:absolute;
             bottom: 12px;
             left: 20px;
         }
@@ -129,26 +126,27 @@ layout: true
 class: center, middle, inverse
 ---
 #Researching 3D depth cameras
-.footnote.left[![Aalto logo](http://pdp.fi/2014/wordpress/wp-content/uploads/2014/02/aalto-logo-white.png)]
+.footnote.left[![Aalto logo](aalto-logo-white.png)]
 ---
 layout: false
 .left-column[
-  ## Introduction:
+  ## Introduction
 ]
 .right-column[
-3D imaging is a *_Big Deal_*.
+3D imaging, VR and depth cameras are a *_Big Deal_* at the moment. Lots of options out there...
 - Applications in robotics, drones, autonomous vehicles, 3d scanning etc...
 
-- Lots of small tech start-ups (of varying quality)
+- Lots of small tech start-ups (of varying quality) popping up
 
-- Big players (Microsoft, Intel etc.)
+- Big players (Microsoft, Intel etc.) also very involved.
+.footnote.left[![Aalto logo](aalto-logo-dark.png)]
 
 ]
 
 ---
 template: inverse
 #Comparing choices .twa.twa-movie-camera[]
-.footnote.left[![Aalto logo](http://pdp.fi/2014/wordpress/wp-content/uploads/2014/02/aalto-logo-white.png)]
+.footnote.left[![Aalto logo](aalto-logo-white.png)]
 
 ---
 layout: false
@@ -170,8 +168,8 @@ Intel's new line of 3D cameras for human-computer interaction. Two models exist,
 - R200 has a minimun range of ~50cm -> may not be short enough
 - F200 has a more suitable range of 20cm!
 - But the F200 is not meant for outdoors and only for frontal detection...
-    ]
-
+]
+.footnote.left[![Aalto logo](aalto-logo-dark.png)]
 ---
 layout: false
 .left-column[
@@ -191,6 +189,7 @@ Microsoft's consumer-oriented camera for the Xbox, now adopted by hackers worldw
     - Not designed with sunlight in mind
     - Not designed for short-range usage
 ]
+.footnote.left[![Aalto logo](aalto-logo-dark.png)]
 ---
 layout: false
 .left-column[
@@ -210,6 +209,7 @@ layout: false
 - Not a lot of examples, no ready-made hand detecing solutions
 - Minimum range of 1,5 meters .twa.twa-unamused[]
 ]
+.footnote.left[![Aalto logo](aalto-logo-dark.png)]
 ---
 layout: false
 .left-column[
@@ -222,8 +222,8 @@ layout: false
 - Lots of small tech start-ups (of varying quality)
 
 - Big players (Microsoft, Intel etc.)
-
 ]
+.footnote.left[![Aalto logo](aalto-logo-dark.png)]
 ---
 layout: false
 .left-column[
@@ -238,11 +238,12 @@ layout: false
 - Big players (Microsoft, Intel etc.)
 
 ]
+.footnote.left[![Aalto logo](aalto-logo-dark.png)]
 ---
 template: inverse
 
 # Summing up...
-.footnote.left[![Aalto logo](http://pdp.fi/2014/wordpress/wp-content/uploads/2014/02/aalto-logo-white.png)]
+.footnote.left[![Aalto logo](aalto-logo-white.png)]
 
 ---
 class: middle
@@ -251,14 +252,17 @@ class: middle
 - Meanwhile, most of the ones that are meant to work outside have a relatively long minimum range
 
 - __However__, inside might be good enough, as the range we need is relatively short
+.footnote.left[![Aalto logo](aalto-logo-dark.png)]
 ---
 name: last-page
 template: inverse
 
-# That's  everything!
+# That's all folks!
 
 ## Slideshow made with [remark](http://github.com/gnab/remark).
 Source: [https://github.com/melonmanchan/3D-presentation-thingie]()
+.footnote.left[![Aalto logo](aalto-logo-white.png)]
+
     </textarea>
 <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
 <script>
