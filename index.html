@@ -137,12 +137,12 @@ layout: false
   ## Introduction
 ]
 .right-column[
-3D imaging, VR and depth cameras are a *_Big Deal_* at the moment. Lots of options out there...
-- Applications in robotics, drones, autonomous vehicles, 3d scanning etc...
+3D imaging, VR and depth cameras are a *_Big Deal_* at the moment. Lots of choices out there...
+- Used in robotics, drones, autonomous vehicles, 3d scanning etc...
 
 - Lots of small tech start-ups (of varying quality) popping up
 
-- Big players (Microsoft, Intel etc.) also very involved.
+- Also big players (Microsoft, Intel etc.) also very involved.
 
 
 Depth cameras contain an infra-red camera and infra-red projector. The projector blasts a big grid of lasers, which bounces
@@ -164,7 +164,7 @@ layout: false
 .right-column[
 Intel's new line of 3D cameras for human-computer interaction. Two models exist, F200 (for laptops) and R200 (forward-facing, for tablets)
 ## .green[Pros]
-- New, but seems to have lots of examples
+- New, but seems to have lots of examples & documentation
 - R200 advertised as working outdoors! .twa.twa-sunny[]
 - Cheap (both F200 and R200 are a 100$)
 
@@ -174,7 +174,7 @@ Intel's new line of 3D cameras for human-computer interaction. Two models exist,
     - Android and tablet support _Coming Soon ™_
 - R200 has a minimun range of ~50cm -> may not be short enough
 - F200 has a more suitable range of 20cm!
-- ... But the F200 is not meant for outdoors and only for frontal detection...
+- But the F200 is not meant for outdoors...
 ]
 .footnote.left[![Aalto logo](aalto-logo-dark.png)]
 ---
@@ -264,9 +264,31 @@ template: inverse
 
 - Meanwhile, most of the ones that are meant to work outside have a relatively long minimum range
 
-- __However__, "inside cameras" might be good enough, as the range we need is relatively short
+- __However__, "inside cameras" might be good enough for us, as the range we need is relatively short
 .footnote.left[![Aalto logo](aalto-logo-dark.png)]
-- The whole depth sensoring aspect might not be necessary, if we wear colored gloves etc. Depends on the scope of the project!
+- The whole depth sensoring aspect might not be necessary. If we wear gloves with colored finger tips etc. Depends on the scope of the project!
+---
+# Decisions, decisions .twa.twa-question[]
+- Do we need everything to function 100% outside, in direct sunlight?
+
+- Is the head-mounted wearable route the way to go, or should we forego it entirely?
+
+- Should we forget the whole infra-red business, and just go with regular image recognition stuff?
+
+.footnote.left[![Aalto logo](aalto-logo-dark.png)]
+
+---
+# My suggestions .twa.twa-thought-balloon[]
+
+Indoors + Surroundings = Kinect 2 for Windows
+
+Indoors + Wearable = Structure.io sensor
+
+Outside + Wearable = Intel R200
+
+Outside + Surroundings = ZED stereo camera
+
+.footnote.left[![Aalto logo](aalto-logo-dark.png)]
 ---
 name: last-page
 template: inverse
