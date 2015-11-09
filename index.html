@@ -13,6 +13,9 @@
 		.footnote img {
 			transform: translateX(-30%) translateY(30%) scale(0.5);
 		}
+        .cockpit {
+            margin-left: 45px;
+        }
         body {
             font-family: 'Droid Serif';
         }
@@ -243,14 +246,18 @@ layout: false
 .right-column[
 Oculus Rift alternative specifically meant for hand recognition
 ## .green[Pros]
-- Seems to fit our use-case! .twa.twa-boom[]
+- Seems to fit our [use-case!](https://developer.leapmotion.com/gallery/graffiti-3d) .twa.twa-boom[]
 - Cheap (around a 100€ for the whole kit)
 - Works on both Mac, PC and Linux
 - Active developer community and app store
 - Good examples and documentation
-- Has a Javascript api -> Integrating it into the existing SAR is probably possible
+- Has a Javascript api -> Integrating it into the existing SAR is probably possible?
+
+##.red[Cons]
+- Also needs an Oculus Rift DK2 for the VR effect
+
 ]
-![Cockpit](cockpit.gif)
+]
 .footnote.left[![Aalto logo](aalto-logo-dark.png)]
 ---
 layout: false
@@ -292,6 +299,8 @@ template: inverse
 - Is the head-mounted wearable route the way to go, or should we forego it entirely?
 
 - Should we forget the whole infra-red business, and just go with regular image recognition stuff?
+
+.cockpit[![Cockpit](cockpit.gif)]
 
 .footnote.left[![Aalto logo](aalto-logo-dark.png)]
 
